@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { GiMapleLeaf } from "react-icons/gi";
+import { GoPlus } from "react-icons/go";
 
 const Header = () => {
 
@@ -12,11 +12,11 @@ const Header = () => {
     };
 
     return (
-        <div>
+        <div className="">
             {/* Top black bar start */}
-            <div className="bg-gray-800 text-white py-2 px-4">
+            <div className="bg-[#222222] text-white py-2 px-4">
                 <div className="md:w-9/12 mx-auto flex flex-wrap items-center">
-                    <div className="w-full md:justify-start justify-center md:mt-0 mt-2 md:w-1/4 flex items-center text-sm mb-2 md:mb-0">
+                    <div className="w-full md:justify-start md:border-r border-[#FFFFFF33] justify-center md:mt-0 mt-2 md:w-1/4 flex items-center text-sm mb-2 md:mb-0">
                         <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.235 20.1536V25.3713C10.2358 25.5487 10.2925 25.7212 10.3969 25.8646C10.5012 26.0079 10.6481 26.1148 10.8166 26.1701C10.9851 26.2253 11.1667 26.2261 11.3357 26.1724C11.5047 26.1187 11.6525 26.0132 11.7582 25.8708L14.8103 21.7173L10.235 20.1536ZM27.0368 0.496459C26.9101 0.406182 26.7608 0.352726 26.6055 0.342005C26.4503 0.331284 26.2951 0.363714 26.1571 0.435709L0.844614 13.6545C0.698974 13.7314 0.578974 13.8492 0.499341 13.9935C0.419708 14.1377 0.383907 14.302 0.396331 14.4662C0.408755 14.6305 0.468864 14.7875 0.569281 14.9181C0.669698 15.0487 0.806054 15.1471 0.961614 15.2013L7.99848 17.6066L22.9846 4.79283L11.3881 18.7642L23.1815 22.7951C23.2985 22.8344 23.4227 22.8477 23.5454 22.8339C23.6681 22.8202 23.7863 22.7799 23.8917 22.7157C23.9972 22.6515 24.0873 22.565 24.1559 22.4623C24.2244 22.3596 24.2697 22.2432 24.2885 22.1212L27.3822 1.30871C27.4051 1.15464 27.385 0.997239 27.324 0.853898C27.2631 0.710556 27.1637 0.586854 27.0368 0.496459Z" fill="#63AB45" />
                         </svg>
@@ -30,7 +30,7 @@ const Header = () => {
                             <span className="text-[#63AB45] underline ml-1">Book Your Tour</span></span>
                     </div>
 
-                    <div className="w-full md:w-1/4 flex justify-center md:justify-end mt-2 md:mt-0 space-x-3">
+                    <div className="w-full  md:border-l border-[#FFFFFF33] md:w-1/4 flex justify-center md:justify-end mt-2 md:mt-0 space-x-3">
                         <a href="#" className="w-6 h-6 rounded-full bg-gray-700 flex items-center justify-center">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="1.10999" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
@@ -70,24 +70,26 @@ const Header = () => {
                             <span className="text-xl font-bold text-gray-800  ml-1">NestGo</span>
                         </div>
 
-                        <div className="hidden md:flex items-center justify-center flex-1">
-                            <a href="#" className="mx-3 text-[#63AB45] font-medium">Home</a>
+                        <div className="hidden md:flex items-center justify-center md:gap-2.5  flex-1">
+                            <a href="#" className="mx-3 text-[#63AB45] flex items-center">Home
+                                <GoPlus className="ml-1"></GoPlus>
+                            </a>
 
                             <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45]">About</a>
 
                             <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
                                 Tours
-                                <IoIosArrowDown className="ml-1.5"></IoIosArrowDown>
+                                <GoPlus className="ml-1"></GoPlus>
                             </a>
 
                             <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
                                 Destination
-                                <IoIosArrowDown className="ml-1.5"></IoIosArrowDown>
+                                <GoPlus className="ml-1"></GoPlus>
                             </a>
 
                             <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
                                 Pages
-                                <IoIosArrowDown className="ml-1.5"></IoIosArrowDown>
+                                <GoPlus className="ml-1"></GoPlus>
                             </a>
                             <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45]">Contact</a>
                         </div>
