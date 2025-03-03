@@ -12,19 +12,17 @@ const Header = () => {
     };
 
     return (
-        <div className="">
+        <div className="sticky top-0 z-10">
             {/* Top black bar start */}
             <div className="bg-[#222222] text-white py-2 px-4">
-                <div className="md:w-9/12 mx-auto flex flex-wrap items-center">
+                <div className="md:w-9/12 mx-auto flex flex-wrap items-center" >
                     <div className="w-full md:justify-start md:border-r border-[#FFFFFF33] justify-center md:mt-0 mt-2 md:w-1/4 flex items-center text-sm mb-2 md:mb-0">
                         <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.235 20.1536V25.3713C10.2358 25.5487 10.2925 25.7212 10.3969 25.8646C10.5012 26.0079 10.6481 26.1148 10.8166 26.1701C10.9851 26.2253 11.1667 26.2261 11.3357 26.1724C11.5047 26.1187 11.6525 26.0132 11.7582 25.8708L14.8103 21.7173L10.235 20.1536ZM27.0368 0.496459C26.9101 0.406182 26.7608 0.352726 26.6055 0.342005C26.4503 0.331284 26.2951 0.363714 26.1571 0.435709L0.844614 13.6545C0.698974 13.7314 0.578974 13.8492 0.499341 13.9935C0.419708 14.1377 0.383907 14.302 0.396331 14.4662C0.408755 14.6305 0.468864 14.7875 0.569281 14.9181C0.669698 15.0487 0.806054 15.1471 0.961614 15.2013L7.99848 17.6066L22.9846 4.79283L11.3881 18.7642L23.1815 22.7951C23.2985 22.8344 23.4227 22.8477 23.5454 22.8339C23.6681 22.8202 23.7863 22.7799 23.8917 22.7157C23.9972 22.6515 24.0873 22.565 24.1559 22.4623C24.2244 22.3596 24.2697 22.2432 24.2885 22.1212L27.3822 1.30871C27.4051 1.15464 27.385 0.997239 27.324 0.853898C27.2631 0.710556 27.1637 0.586854 27.0368 0.496459Z" fill="#63AB45" />
                         </svg>
-
                         <span className="ml-2">Email: <br />
                             <span className="text-[#63AB45]">info@example.com</span></span>
                     </div>
-
                     <div className="w-full md:w-2/4 text-center text-sm">
                         <span>50% Off Your Next Trip. Hurry Up For Your New Tour!
                             <span className="text-[#63AB45] underline ml-1">Book Your Tour</span></span>
@@ -58,104 +56,108 @@ const Header = () => {
                             </svg>
                         </a>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
             {/* Top black bar end*/}
 
-            <div className="bg-white shadow-md px-4 py-4">
-                <div className="md:w-10/12 mx-auto">
-                    <div className="flex justify-between items-center">
-                        <div className="flex items-center">
-                            <GiMapleLeaf className="text-[#63AB45] text-3xl"></GiMapleLeaf>
-                            <span className="text-xl font-bold text-gray-800  ml-1">NestGo</span>
-                        </div>
-
-                        <div className="hidden md:flex items-center justify-center md:gap-2.5  flex-1">
-                            <a href="#" className="mx-3 text-[#63AB45] flex items-center">Home
-                                <GoPlus className="ml-1"></GoPlus>
-                            </a>
-
-                            <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45]">About</a>
-
-                            <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
-                                Tours
-                                <GoPlus className="ml-1"></GoPlus>
-                            </a>
-
-                            <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
-                                Destination
-                                <GoPlus className="ml-1"></GoPlus>
-                            </a>
-
-                            <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
-                                Pages
-                                <GoPlus className="ml-1"></GoPlus>
-                            </a>
-                            <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45]">Contact</a>
-                        </div>
-
-                        <div className="hidden md:flex items-center">
-                            <div className="flex gap-2">
-                                <button className="p-2 text-gray-600 cursor-pointer">
-                                    <svg className="" width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.45 15.84C26.45 22.7436 20.8535 28.34 13.95 28.34C7.04627 28.34 1.44995 22.7436 1.44995 15.84C1.44995 8.93632 7.04627 3.34 13.95 3.34C20.8535 3.34 26.45 8.93632 26.45 15.84Z" stroke="#100C08" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.9501 14.1733C18.9501 16.9347 16.7116 19.1733 13.9501 19.1733C11.1884 19.1733 8.94995 16.9347 8.94995 14.1733C8.94995 11.4119 11.1884 9.17329 13.9501 9.17329C16.7116 9.17329 18.9501 11.4119 18.9501 14.1733Z" stroke="#100C08" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M6.49292 25.8724C6.89282 22.1067 10.0791 19.1733 13.9507 19.1733C17.8224 19.1733 21.0087 22.1069 21.4084 25.8725" stroke="#100C08" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-
-                                </button>
-                                <button className="p-2 text-gray-600 cursor-pointer ">
-                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.25006 0.431414C1.29667 0.772576 0.643297 1.58869 0.509955 2.61217C0.42995 3.24766 0.42995 7.97039 0.509955 8.6059C0.629962 9.50228 1.13 10.2247 1.93672 10.6462L2.34341 10.8602H5.77696H9.21052L9.61055 10.6462C10.1239 10.3786 10.5306 9.97055 10.7973 9.45545L11.0106 9.05409V5.60903V2.16398L10.7973 1.7626C10.5306 1.24752 10.1239 0.839469 9.61055 0.571892L9.21052 0.35783L5.87696 0.344452C2.99678 0.331072 2.50342 0.344452 2.25006 0.431414ZM9.11051 1.4549C9.5172 1.66896 9.69722 1.84288 9.88389 2.2108L10.0439 2.5252V5.6291V8.72631L9.8239 9.08753C9.52387 9.59594 9.07051 9.86351 8.4238 9.92371C8.15712 9.95048 6.77702 9.95716 5.3436 9.94378L2.74344 9.92371L2.41008 9.7431C2.01672 9.53573 1.85005 9.3618 1.63669 8.95374L1.47668 8.65273V5.60903V2.56534L1.63669 2.26431C1.91672 1.72247 2.31008 1.42145 2.87677 1.32111C3.02345 1.29435 4.41687 1.28097 5.97698 1.28097L8.81049 1.29435L9.11051 1.4549Z" fill="black" />
-                                        <path d="M16.651 0.431429C15.6976 0.772591 15.0443 1.5887 14.911 2.61219C14.8776 2.87976 14.851 4.23102 14.851 5.60905C14.851 6.98708 14.8776 8.33834 14.911 8.60591C15.031 9.5023 15.531 10.2248 16.3376 10.6462L16.7443 10.8602H20.1779H23.6115L24.0115 10.6462C24.5248 10.3786 24.9315 9.97056 25.1982 9.45547L25.4115 9.0541V5.60905V2.16399L25.1982 1.76262C24.9315 1.24754 24.5248 0.839484 24.0115 0.571908L23.6115 0.357845L20.2779 0.344467C17.3978 0.331088 16.9043 0.344467 16.651 0.431429ZM23.5115 1.45491C23.9248 1.66897 24.0982 1.8429 24.2848 2.21751L24.4515 2.5386L24.4448 5.61574C24.4448 8.30488 24.4315 8.72633 24.3382 8.90694C24.1382 9.30162 23.9315 9.52237 23.5715 9.72305L23.2114 9.92373H20.1779H17.1444L16.811 9.74312C16.4176 9.53574 16.251 9.36181 16.0376 8.95376L15.8776 8.65274V5.60905V2.56535L16.0376 2.26433C16.3176 1.72249 16.711 1.42146 17.2778 1.32112C17.4244 1.29437 18.8178 1.28099 20.3779 1.28099L23.2114 1.29437L23.5115 1.45491Z" fill="black" />
-                                        <path d="M2.25006 14.8807C1.29667 15.2218 0.643297 16.0379 0.509955 17.0614C0.42995 17.6969 0.42995 22.4196 0.509955 23.0551C0.629962 23.9515 1.13 24.674 1.93672 25.0954L2.34341 25.3094H5.77696H9.21052L9.61055 25.0954C10.1239 24.8278 10.5306 24.4197 10.7973 23.9047L11.0106 23.5033V20.0583V16.6132L10.7973 16.2118C10.5306 15.6968 10.1239 15.2887 9.61055 15.0211L9.21052 14.8071L5.87696 14.7937C2.99678 14.7803 2.50342 14.7937 2.25006 14.8807ZM9.11051 15.9042C9.5172 16.1182 9.69722 16.2921 9.88389 16.66L10.0439 16.9744V20.0783V23.1756L9.8239 23.5368C9.52387 24.0451 9.07051 24.3128 8.4238 24.3729C8.15712 24.3997 6.77702 24.4064 5.3436 24.393L2.74344 24.3729L2.41008 24.1924C2.01672 23.985 1.85005 23.8111 1.63669 23.4031L1.47668 23.1019V20.0583V17.0146L1.63669 16.7136C1.91672 16.1717 2.31008 15.8707 2.87677 15.7704C3.02345 15.7436 4.41687 15.7303 5.97698 15.7303L8.81049 15.7436L9.11051 15.9042Z" fill="black" />
-                                        <path d="M18.8446 14.9142C16.9578 15.4092 15.531 16.8474 15.0443 18.7471C14.8576 19.4762 14.8576 20.6403 15.0443 21.3694C15.4976 23.1354 16.7444 24.48 18.4979 25.0954C19.0046 25.2693 19.1912 25.3028 19.9779 25.3296C20.7514 25.3562 20.9714 25.3362 21.4447 25.2158C23.3915 24.7208 24.8183 23.296 25.3183 21.3426C25.4983 20.6403 25.4917 19.4629 25.3117 18.7471C24.825 16.834 23.3915 15.3957 21.4847 14.9074C20.7714 14.7268 19.5512 14.7268 18.8446 14.9142ZM21.6047 16.0044C22.2647 16.2453 22.7382 16.5597 23.2782 17.1217C24.0715 17.9578 24.4449 18.901 24.4449 20.0717C24.4449 21.2958 24.0715 22.1856 23.1849 23.0685C22.2847 23.9649 21.398 24.3394 20.198 24.3462C19.4779 24.3462 18.9379 24.2192 18.2446 23.8914C17.8578 23.704 17.6178 23.5233 17.1711 23.0753C16.2778 22.1789 15.9111 21.2958 15.9111 20.0583C15.9111 18.881 16.2778 17.9644 17.0778 17.1217C17.6178 16.5597 18.0912 16.2453 18.7579 15.9978C19.6046 15.6901 20.758 15.6901 21.6047 16.0044Z" fill="black" />
-                                    </svg>
-                                </button>
-
+            <div className="">
+                <div className="bg-white shadow-md px-4  py-4" >
+                    <div className="md:w-10/12 mx-auto">
+                        <div className="flex justify-between items-center">
+                            <div className="flex items-center">
+                                <GiMapleLeaf className="text-[#63AB45] text-3xl"></GiMapleLeaf>
+                                <span className="text-xl font-bold text-gray-800  ml-1">NestGo</span>
                             </div>
-                            <div className="border-l border-gray-300 h-6 mx-2"></div>
 
-                            <div className="flex flex-col">
-                                <span className="text-xs text-gray-500">To More Inquiry</span>
-                                <a href="tel:+9907376214322" className="text-[#63AB45] font-semibold text-sm">+990-737 621 432</a>
-                            </div>
-                        </div>
+                            <div className="hidden md:flex items-center justify-center md:gap-2.5  flex-1">
+                                <a href="#" className="mx-3 text-[#63AB45] flex items-center">Home
+                                    <GoPlus className="ml-1"></GoPlus>
+                                </a>
 
-                        {/* Mobile menu  */}
-                        <button onClick={toggleMenu} className="md:hidden p-2 text-gray-600">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                {menuOpen ? (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                ) : (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                                )}
-                            </svg>
-                        </button>
-                    </div>
-                    {menuOpen && (
-                        <div className="md:hidden mt-4 pt-4 border-t border-gray-200">
-                            <div className="flex flex-col space-y-3">
-                                <a href="#" className="text-[#63AB45] font-medium py-2">Home</a>
-                                <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">About</a>
-                                <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Tours</a>
-                                <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Destination</a>
-                                <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Pages</a>
-                                <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Contact</a>
+                                <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45]">About</a>
+
+                                <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
+                                    Tours
+                                    <GoPlus className="ml-1"></GoPlus>
+                                </a>
+
+                                <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
+                                    Destination
+                                    <GoPlus className="ml-1"></GoPlus>
+                                </a>
+
+                                <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45] flex items-center">
+                                    Pages
+                                    <GoPlus className="ml-1"></GoPlus>
+                                </a>
+                                <a href="#" className="mx-3 text-gray-700 hover:text-[#63AB45]">Contact</a>
                             </div>
-                            <div className="mt-4 pt-4 border-t border-gray-200">
-                                <div className="flex items-center">
-                                    <svg className="w-4 h-4 text-[#63AB45] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                    </svg>
-                                    <span className="text-[#63AB45] font-semibold text-sm">+990-737 621 432</span>
+
+                            <div className="hidden md:flex items-center">
+                                <div className="flex gap-2">
+                                    <button className="p-2 text-gray-600 cursor-pointer">
+                                        <svg className="" width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.45 15.84C26.45 22.7436 20.8535 28.34 13.95 28.34C7.04627 28.34 1.44995 22.7436 1.44995 15.84C1.44995 8.93632 7.04627 3.34 13.95 3.34C20.8535 3.34 26.45 8.93632 26.45 15.84Z" stroke="#100C08" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M18.9501 14.1733C18.9501 16.9347 16.7116 19.1733 13.9501 19.1733C11.1884 19.1733 8.94995 16.9347 8.94995 14.1733C8.94995 11.4119 11.1884 9.17329 13.9501 9.17329C16.7116 9.17329 18.9501 11.4119 18.9501 14.1733Z" stroke="#100C08" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.49292 25.8724C6.89282 22.1067 10.0791 19.1733 13.9507 19.1733C17.8224 19.1733 21.0087 22.1069 21.4084 25.8725" stroke="#100C08" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </button>
+                                    <button className="p-2 text-gray-600 cursor-pointer ">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.25006 0.431414C1.29667 0.772576 0.643297 1.58869 0.509955 2.61217C0.42995 3.24766 0.42995 7.97039 0.509955 8.6059C0.629962 9.50228 1.13 10.2247 1.93672 10.6462L2.34341 10.8602H5.77696H9.21052L9.61055 10.6462C10.1239 10.3786 10.5306 9.97055 10.7973 9.45545L11.0106 9.05409V5.60903V2.16398L10.7973 1.7626C10.5306 1.24752 10.1239 0.839469 9.61055 0.571892L9.21052 0.35783L5.87696 0.344452C2.99678 0.331072 2.50342 0.344452 2.25006 0.431414ZM9.11051 1.4549C9.5172 1.66896 9.69722 1.84288 9.88389 2.2108L10.0439 2.5252V5.6291V8.72631L9.8239 9.08753C9.52387 9.59594 9.07051 9.86351 8.4238 9.92371C8.15712 9.95048 6.77702 9.95716 5.3436 9.94378L2.74344 9.92371L2.41008 9.7431C2.01672 9.53573 1.85005 9.3618 1.63669 8.95374L1.47668 8.65273V5.60903V2.56534L1.63669 2.26431C1.91672 1.72247 2.31008 1.42145 2.87677 1.32111C3.02345 1.29435 4.41687 1.28097 5.97698 1.28097L8.81049 1.29435L9.11051 1.4549Z" fill="black" />
+                                            <path d="M16.651 0.431429C15.6976 0.772591 15.0443 1.5887 14.911 2.61219C14.8776 2.87976 14.851 4.23102 14.851 5.60905C14.851 6.98708 14.8776 8.33834 14.911 8.60591C15.031 9.5023 15.531 10.2248 16.3376 10.6462L16.7443 10.8602H20.1779H23.6115L24.0115 10.6462C24.5248 10.3786 24.9315 9.97056 25.1982 9.45547L25.4115 9.0541V5.60905V2.16399L25.1982 1.76262C24.9315 1.24754 24.5248 0.839484 24.0115 0.571908L23.6115 0.357845L20.2779 0.344467C17.3978 0.331088 16.9043 0.344467 16.651 0.431429ZM23.5115 1.45491C23.9248 1.66897 24.0982 1.8429 24.2848 2.21751L24.4515 2.5386L24.4448 5.61574C24.4448 8.30488 24.4315 8.72633 24.3382 8.90694C24.1382 9.30162 23.9315 9.52237 23.5715 9.72305L23.2114 9.92373H20.1779H17.1444L16.811 9.74312C16.4176 9.53574 16.251 9.36181 16.0376 8.95376L15.8776 8.65274V5.60905V2.56535L16.0376 2.26433C16.3176 1.72249 16.711 1.42146 17.2778 1.32112C17.4244 1.29437 18.8178 1.28099 20.3779 1.28099L23.2114 1.29437L23.5115 1.45491Z" fill="black" />
+                                            <path d="M2.25006 14.8807C1.29667 15.2218 0.643297 16.0379 0.509955 17.0614C0.42995 17.6969 0.42995 22.4196 0.509955 23.0551C0.629962 23.9515 1.13 24.674 1.93672 25.0954L2.34341 25.3094H5.77696H9.21052L9.61055 25.0954C10.1239 24.8278 10.5306 24.4197 10.7973 23.9047L11.0106 23.5033V20.0583V16.6132L10.7973 16.2118C10.5306 15.6968 10.1239 15.2887 9.61055 15.0211L9.21052 14.8071L5.87696 14.7937C2.99678 14.7803 2.50342 14.7937 2.25006 14.8807ZM9.11051 15.9042C9.5172 16.1182 9.69722 16.2921 9.88389 16.66L10.0439 16.9744V20.0783V23.1756L9.8239 23.5368C9.52387 24.0451 9.07051 24.3128 8.4238 24.3729C8.15712 24.3997 6.77702 24.4064 5.3436 24.393L2.74344 24.3729L2.41008 24.1924C2.01672 23.985 1.85005 23.8111 1.63669 23.4031L1.47668 23.1019V20.0583V17.0146L1.63669 16.7136C1.91672 16.1717 2.31008 15.8707 2.87677 15.7704C3.02345 15.7436 4.41687 15.7303 5.97698 15.7303L8.81049 15.7436L9.11051 15.9042Z" fill="black" />
+                                            <path d="M18.8446 14.9142C16.9578 15.4092 15.531 16.8474 15.0443 18.7471C14.8576 19.4762 14.8576 20.6403 15.0443 21.3694C15.4976 23.1354 16.7444 24.48 18.4979 25.0954C19.0046 25.2693 19.1912 25.3028 19.9779 25.3296C20.7514 25.3562 20.9714 25.3362 21.4447 25.2158C23.3915 24.7208 24.8183 23.296 25.3183 21.3426C25.4983 20.6403 25.4917 19.4629 25.3117 18.7471C24.825 16.834 23.3915 15.3957 21.4847 14.9074C20.7714 14.7268 19.5512 14.7268 18.8446 14.9142ZM21.6047 16.0044C22.2647 16.2453 22.7382 16.5597 23.2782 17.1217C24.0715 17.9578 24.4449 18.901 24.4449 20.0717C24.4449 21.2958 24.0715 22.1856 23.1849 23.0685C22.2847 23.9649 21.398 24.3394 20.198 24.3462C19.4779 24.3462 18.9379 24.2192 18.2446 23.8914C17.8578 23.704 17.6178 23.5233 17.1711 23.0753C16.2778 22.1789 15.9111 21.2958 15.9111 20.0583C15.9111 18.881 16.2778 17.9644 17.0778 17.1217C17.6178 16.5597 18.0912 16.2453 18.7579 15.9978C19.6046 15.6901 20.758 15.6901 21.6047 16.0044Z" fill="black" />
+                                        </svg>
+                                    </button>
+
+                                </div>
+                                <div className="border-l border-gray-300 h-6 mx-2"></div>
+
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-gray-500">To More Inquiry</span>
+                                    <a href="tel:+9907376214322" className="text-[#63AB45] font-semibold text-sm">+990-737 621 432</a>
                                 </div>
                             </div>
+
+                            {/* Mobile menu  */}
+                            <button onClick={toggleMenu} className="md:hidden p-2 text-gray-600">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    {menuOpen ? (
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    ) : (
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                    )}
+                                </svg>
+                            </button>
                         </div>
-                    )}
-                </div>
+                        {menuOpen && (
+                            <div className="md:hidden mt-4 pt-4 border-t border-gray-200">
+                                <div className="flex flex-col space-y-3">
+                                    <a href="#" className="text-[#63AB45] font-medium py-2">Home</a>
+                                    <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">About</a>
+                                    <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Tours</a>
+                                    <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Destination</a>
+                                    <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Pages</a>
+                                    <a href="#" className="text-gray-700 hover:text-[#63AB45] py-2">Contact</a>
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-gray-200">
+                                    <div className="flex items-center">
+                                        <svg className="w-4 h-4 text-[#63AB45] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        <span className="text-[#63AB45] font-semibold text-sm">+990-737 621 432</span>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div >
             </div>
-        </div>
+
+
+        </div >
     );
 };
 
