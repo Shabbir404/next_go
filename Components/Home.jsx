@@ -4,7 +4,9 @@ import travelAPng from '../src/assets/travel-agency.png'
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegClock } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-
+import { PiArrowCircleRightThin } from "react-icons/pi";
+import { PiArrowCircleLeftThin } from "react-icons/pi";
+import SecondLayer from '../Home_Layers/SecondLayer';
 
 
 const TypewriterEffect = ({ text, speed = 100 }) => {
@@ -30,14 +32,16 @@ const Home = () => {
     return (
         <div>
             <div className="w-11/12 mx-auto">
-                <div className="bg-[#7C7A79] rounded-t-3xl  md:h-[703px] w-full">
+                <div className="bg-[#7C7A79] rounded-t-3xl relative md:h-[703px] w-full">
+                    <div className='w-11/12 mx-auto hidden  md:flex justify-between absolute
+                     md:top-[450px] left-0 right-0 z-10'>
+                        <PiArrowCircleRightThin className='text-5xl text-white'></PiArrowCircleRightThin>
+                        <PiArrowCircleLeftThin className='text-5xl  text-white'></PiArrowCircleLeftThin>
+                    </div>
                     <div className="flex justify-center items-center md:min-h-[650px]  min-h-screen">
                         <div className="px-4 max-w-full md:max-w-none">
                             <div className='flex gap-2 mx-auto md:ml-[278px] items-center justify-center bg-[#FBB03B] w-[220px] h-[48px] rounded-md'>
-                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.005 12.8928C13.9204 9.88722 13.6796 10.2622 13.7348 10.1838C14.4322 9.20023 14.8008 8.04257 14.8008 6.83594C14.8008 3.63602 12.2041 1 9 1C5.80634 1 3.19922 3.63081 3.19922 6.83594C3.19922 8.0418 3.57553 9.22976 4.29574 10.2266L5.99491 12.8929C4.17822 13.172 1.08984 14.004 1.08984 15.8359C1.08984 16.5037 1.52571 17.4554 3.60218 18.197C5.05209 18.7148 6.96906 19 9 19C12.7978 19 16.9102 17.9287 16.9102 15.8359C16.9102 14.0037 13.8254 13.1726 12.005 12.8928ZM5.17672 9.6465C5.17093 9.63744 5.16487 9.62856 5.15855 9.61985C4.55924 8.79537 4.25391 7.81824 4.25391 6.83594C4.25391 4.19859 6.37755 2.05469 9 2.05469C11.617 2.05469 13.7461 4.19954 13.7461 6.83594C13.7461 7.81982 13.4465 8.7638 12.8796 9.56656C12.8288 9.63357 13.0939 9.22182 9 15.6457L5.17672 9.6465ZM9 17.9453C4.85177 17.9453 2.14453 16.726 2.14453 15.8359C2.14453 15.2377 3.53559 14.2541 6.61809 13.8707L8.55527 16.9104C8.60291 16.9852 8.66863 17.0467 8.74636 17.0893C8.82408 17.132 8.91131 17.1543 8.99996 17.1543C9.08862 17.1543 9.17584 17.132 9.25357 17.0893C9.3313 17.0467 9.39702 16.9852 9.44466 16.9104L11.3818 13.8707C14.4644 14.2541 15.8555 15.2377 15.8555 15.8359C15.8555 16.7184 13.1726 17.9453 9 17.9453Z" fill="white" />
-                                    <path d="M9 4.19922C7.54611 4.19922 6.36328 5.38205 6.36328 6.83594C6.36328 8.28982 7.54611 9.47266 9 9.47266C10.4539 9.47266 11.6367 8.28982 11.6367 6.83594C11.6367 5.38205 10.4539 4.19922 9 4.19922ZM9 8.41797C8.12767 8.41797 7.41797 7.70827 7.41797 6.83594C7.41797 5.96361 8.12767 5.25391 9 5.25391C9.87233 5.25391 10.582 5.96361 10.582 6.83594C10.582 7.70827 9.87233 8.41797 9 8.41797Z" fill="white" />
-                                </svg>
+                                <CiLocationOn className='text-2xl text-white flex-shrink-0' />
                                 <p className='jost text-white'>Bangladesh</p>
                             </div>
 
@@ -78,7 +82,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className='flex justify-center -mt-28  md:-mt-10 '>
                         <div className='w-[806px] border-b border-gray-300 rounded-t-2xl h-[54px] bg-[#EDF2DE]'>
                             <div className='grid grid-cols-1 md:grid-cols-5 '>
@@ -136,7 +139,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className='bg-[#EDF2DE] rounded-b-3xl md:-mt-0 mt-60'>
                         <div className='flex flex-col md:flex-row'>
                             <div className=' md:w-auto flex-grow'>
@@ -191,9 +193,9 @@ const Home = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <SecondLayer></SecondLayer>
         </div>
     );
 };
