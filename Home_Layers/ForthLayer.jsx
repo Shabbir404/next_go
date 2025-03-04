@@ -3,6 +3,8 @@ import bg from '../src/assets/bgPlane.png'
 import leaf from '../src/assets/result.svg'
 import { GoDotFill } from "react-icons/go";
 import TravelCardGrid from './GridBox';
+import FifthLayer from './FifthLayer';
+import TravelFeatures from './FifthLayer';
 
 const ForthLayer = () => {
 
@@ -108,14 +110,14 @@ const ForthLayer = () => {
                 <div className='w-11/12 md:w-10/12 mx-auto mt-10'>
                     <TravelCardGrid></TravelCardGrid>
                 </div>
-                <div className='flex justify-center mt-5'>
+                <div className='flex justify-center mt-16'>
                     <button className='btn bg-[#FBB03B] text-black rounded-full text-center'>
                         View All Package
                     </button>
                 </div>
             </div>
-
-
+        
+            <FifthLayer></FifthLayer>
         </div>
     );
 };

@@ -19,11 +19,10 @@
     font-style: normal;
 }
 
-html,
-body {
-    overflow-x: hidden;
-    width: 100%;
-}
+/* Debug: Find elements causing the issue */
+/* * {
+    outline: 1px solid red;
+} */
 
 
 .overleyImg {

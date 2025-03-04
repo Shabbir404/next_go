@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiMapleLeaf } from "react-icons/gi";
 import { GoPlus } from "react-icons/go";
+import '../style.css'
 
 const Header = () => {
 
@@ -12,6 +13,7 @@ const Header = () => {
     };
 
     return (
+
         <div className="sticky top-0 z-10">
             {/* Top black bar start */}
             <div className="bg-[#222222] text-white py-2 px-4 hidden md:block">
@@ -158,6 +160,9 @@ const Header = () => {
 
 
         </div >
+
+
+
     );
 };
 

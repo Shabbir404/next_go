@@ -53,7 +53,7 @@ const SecondLayer = () => {
                                         eu elementum turpis lacinia. Integer female go tellus ligula, attendora and
                                         condimentum.
                                     </p>
-                                    <div className='md:flex justify-between  w-[636px]'>
+                                    <div className='md:flex justify-between  md:w-[636px]'>
                                         <button className='text-white  md:ml-0 ml-28 w-[162.97999572753906px] bg-[#63AB45] btn mt-10'>
                                             More About
                                         </button>

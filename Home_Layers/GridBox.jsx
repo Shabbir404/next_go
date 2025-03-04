@@ -8,7 +8,7 @@ const TravelCard = ({ trip }) => {
     return (
         <div className="bg-white rounded hover:scale-105 duration-300 p-5 shadow-md h-full flex flex-col">
             {/*  Image Area start */}
-            <div className="bg-[#C4C4C4]  rounded-md w-[376px] h-[260px] relative">
+            <div className="bg-[#C4C4C4]  rounded-md md:w-[376px] h-[260px] relative">
 
                 <div className="absolute top-3  scale-115 bg-black text-white text-xs px-2 py-1">
                     {duration}
