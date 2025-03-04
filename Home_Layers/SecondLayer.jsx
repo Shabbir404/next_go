@@ -2,6 +2,7 @@ import '../style.css'
 import { TbTargetArrow } from "react-icons/tb";
 import { motion } from "framer-motion";
 import ThirdLayer from './ThirdLayer';
+import ForthLayer from './ForthLayer';
 
 const SecondLayer = () => {
     return (
@@ -115,6 +116,7 @@ const SecondLayer = () => {
                 </div>
             </div>
             <ThirdLayer></ThirdLayer>
+            <ForthLayer></ForthLayer>
         </div>
 
 
