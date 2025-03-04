@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className="sticky top-0 z-10">
             {/* Top black bar start */}
-            <div className="bg-[#222222] text-white py-2 px-4">
+            <div className="bg-[#222222] text-white py-2 px-4 hidden md:block">
                 <div className="md:w-9/12 mx-auto flex flex-wrap items-center" >
                     <div className="w-full md:justify-start md:border-r border-[#FFFFFF33] justify-center md:mt-0 mt-2 md:w-1/4 flex items-center text-sm mb-2 md:mb-0">
                         <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
