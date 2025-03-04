@@ -2,6 +2,7 @@ import '../style.css'
 import bg from '../src/assets/bgPlane.png'
 import leaf from '../src/assets/result.svg'
 import { GoDotFill } from "react-icons/go";
+import TravelCardGrid from './GridBox';
 
 const ForthLayer = () => {
 
@@ -48,7 +49,7 @@ const ForthLayer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row'>
-                    <div className="w-full md:w-6/12 h-[600px] md:h-[689px] relative">
+                    <div className="w-full md:w-6/12 h-[600px] md:h-[582px] relative">
                         <div className='p-8 md:p-20 absolute'>
                             <div className='flex gap-3 justify-center md:justify-start text-[#63AB45]'>
                                 <img className='w-[15px] h-[20px]' src={leaf} alt="" />
@@ -88,11 +89,31 @@ const ForthLayer = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className='mt-10 md:mt-20'>
+                    <div className='flex gap-3 justify-center text-[#63AB45]'>
+                        <img className='w-[15px] h-[20px]' src={leaf} alt="" />
+                        <h1 className='satisfy text-lg md:text-xl'>
+                            Our Facility
+                        </h1>
+                        <img className='rotate-180 w-[15px] h-[20px]' src={leaf} alt="" />
+                    </div>
+                    <div className='flex justify-center'>
+                        <h1 className='md:text-5xl text-center md:text-start
+                         text-3xl mt-4 text-black font-semibold'>
+                            Affordable Vacation Bundles</h1>
+
+                    </div>
+                </div>
+                <div className='w-11/12 md:w-10/12 mx-auto mt-10'>
+                    <TravelCardGrid></TravelCardGrid>
+                </div>
+                <div className='flex justify-center mt-5'>
+                    <button className='btn bg-[#FBB03B] text-black rounded-full text-center'>
+                        View All Package
+                    </button>
+                </div>
             </div>
-
-
-
-
 
 
         </div>
