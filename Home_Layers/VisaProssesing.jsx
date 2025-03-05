@@ -1,5 +1,6 @@
 import resultPng from '../src/assets/result.svg'
 import '../style.css'
+import NewLatter from './NewLatter';
 import CountryPriceCardContainer from './VisaCard';
 
 const VisaProssesing = () => {
@@ -22,8 +23,8 @@ const VisaProssesing = () => {
                     <div>
                         <CountryPriceCardContainer></CountryPriceCardContainer>
                     </div>
-                    <div>
-                        
+                    <div className='mt-16'>
+                        <NewLatter></NewLatter>
                     </div>
                 </div>
             </div>
