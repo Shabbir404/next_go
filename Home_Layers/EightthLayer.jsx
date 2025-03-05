@@ -1,5 +1,6 @@
 import resultPng from '../src/assets/result.svg'
 import '../style.css'
+import Regard from './Regard';
 import TravelDealsLayout from './TourPaks';
 
 const EightthLayer = () => {
@@ -77,6 +78,8 @@ const EightthLayer = () => {
                 </div>
 
             </div>
+
+            <Regard></Regard>
         </div>
     );
 };
