@@ -8,6 +8,7 @@ import calander from '../src/assets/calender.svg'
 import timehand from '../src/assets/timehand.svg'
 import timer from '../src/assets/timer.svg'
 import guide from '../src/assets/guide.svg'
+import SixthLayer from './SixthLayer'
 
 const FifthLayer = () => {
 
@@ -30,7 +31,7 @@ const FifthLayer = () => {
             <div>
                 <h1 className='font-bold text-center mt-3 text-4xl'>Why Choose TripRex</h1>
             </div>
-            <div className='md:w-10/12 mx-auto mt-10'>
+            <div className='md:w-10/12 w-11/12 mx-auto mt-10'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                     {features.map((feature, index) => (
                         <div
@@ -49,6 +50,8 @@ const FifthLayer = () => {
                     ))}
                 </div>
             </div>
+
+            <SixthLayer></SixthLayer>
         </div>
     );
 };
