@@ -1,6 +1,7 @@
 import resultPng from '../src/assets/result.svg'
 import '../style.css'
-
+import { BsArrowUpRightCircle } from "react-icons/bs";
+import { GoDotFill } from "react-icons/go";
 
 const Blog = () => {
 
@@ -33,32 +34,39 @@ const Blog = () => {
                         Latest Travel Blog</h1>
                 </div>
                 <div>
-                    <div className="flex gap-4 p-6 ">
-                        {/* Left Large Card */}
-                        <div className="w-2/3 bg-white p-4  rounded-lg shadow-lg">
-                            <div className="bg-[#C4C4C4] md:h-[500px] "></div>
-                            <p className="text-sm text-gray-500 mt-3">By Shafiqul • Feb 6, 2024 • 0 Comment</p>
-                            <h2 className="font-bold text-lg mt-1">
+                    <div className="flex gap-4 p-6 flex-col md:flex-row">
+                        <div className="w-full md:w-2/3 bg-white p-4 hover:scale-105 duration-200 rounded-lg shadow-lg">
+                            <div className="bg-[#C4C4C4] rounded-sm h-[250px] md:h-[400px]"></div>
+                            <p className="text-sm text-gray-500 mt-3 flex gap-1">By Shafiqul
+                                <GoDotFill className='mt-0.5 text-[#63AB45]'></GoDotFill> Feb 6, 2024
+                                <GoDotFill className='mt-0.5 text-[#63AB45]'></GoDotFill> 0 Comment</p>
+                            <h2 className="font-semibold text-2xl mt-2">
                                 Spiritual Sojourn: Pilgrimage Tours For Soul Seekers
                             </h2>
-                            <a href="#" className="text-green-600 font-semibold mt-2 inline-block">
-                                View Post
-                            </a>
+                            <div className='flex gap-2'>
+                                <a href="#" className="underline text-[#63AB45] mt-5 font-semibold mt-1 inline-block">
+                                    View Post
+                                </a>
+                                <BsArrowUpRightCircle className='mt-6 text-[#64ab45a8] text-xl'></BsArrowUpRightCircle>
+                            </div>
                         </div>
 
-                        {/* Right Small Cards */}
-                        <div className="w-2/3 flex flex-col gap-4">
+                        <div className="w-full md:w-2/3 flex flex-col gap-4">
                             {posts.map((post, index) => (
-                                <div key={index} className="bg-white p-4 rounded-lg shadow-lg flex gap-4">
-                                    <div className="bg-[#C4C4C4] md:h-[150px] md:w-[261px] flex items-center justify-center ">
+                                <div key={index} className="hover:scale-105 duration-200 bg-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row gap-4">
+                                    <div className="bg-[#C4C4C4] rounded-sm h-[150px] w-full md:w-[261px] flex items-center justify-center">
                                         <span className="text-sm font-bold">6 Feb</span>
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-500">By Shafiqul • {post.category}</p>
-                                        <h2 className="font-bold text-md">{post.title}</h2>
-                                        <a href="#" className="text-green-600 font-semibold mt-1 inline-block">
-                                            View Post
-                                        </a>
+                                        <p className="text-sm text-[#100C0880] flex gap-1">By Shafiqul
+                                            <GoDotFill className='mt-0.5 text-[#63AB45]'></GoDotFill> {post.category}</p>
+                                        <h2 className="font-semibold text-2xl mt-4">{post.title}</h2>
+                                        <div className='flex gap-2'>
+                                            <a href="#" className="underline text-[#63AB45] mt-5 font-semibold mt-1 inline-block">
+                                                View Post
+                                            </a>
+                                            <BsArrowUpRightCircle className='mt-6 text-[#64ab45a8] text-xl'></BsArrowUpRightCircle>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
