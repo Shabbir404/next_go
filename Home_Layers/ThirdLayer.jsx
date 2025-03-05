@@ -58,17 +58,17 @@ const ThirdLayer = () => {
                     <h1 className='font-bold text-center mt-3 text-4xl md:text-5xl'>
                         Ultimate Travel Experience</h1>
                 </div>
-                <div className=' flex md:gap-10 gap-5 justify-center mt-10'>
-                    <div className='text-[#63AB45] text-xl font-semibold flex gap-2 md:gap-4'>
-                        <img className='w-[28px] h-[28px]' src={loacationSvg} alt="" />
+                <div className="flex flex-wrap justify-center items-center gap-3 md:gap-10 mt-10">
+                    <div className="text-[#63AB45] text-sm md:text-xl font-semibold flex items-center gap-2 md:gap-4">
+                        <img className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]" src={loacationSvg} alt="Location Icon" />
                         Tour Package
                     </div>
-                    <div className=' text-xl font-semibold flex gap-2 md:gap-4'>
-                        <img className='w-[28px] h-[28px]' src={hotelSvg} alt="" />
+                    <div className="text-sm md:text-xl font-semibold flex items-center gap-2 md:gap-4">
+                        <img className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]" src={hotelSvg} alt="Hotel Icon" />
                         Hotel
                     </div>
-                    <div className=' text-xl font-semibold flex gap-2 md:gap-4'>
-                        <img className='w-[28px] h-[28px]' src={carSvg} alt="" />
+                    <div className="text-sm md:text-xl font-semibold flex items-center gap-2 md:gap-4">
+                        <img className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]" src={carSvg} alt="Car Icon" />
                         Transport
                     </div>
                 </div>

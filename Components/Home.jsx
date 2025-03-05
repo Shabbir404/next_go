@@ -28,9 +28,8 @@ const TypewriterEffect = ({ text, speed = 100 }) => {
 
 const Home = () => {
 
-
     return (
-        <div>
+        <div className=''>
             <div className="w-11/12 mx-auto">
                 <div className="bg-[#7C7A79] rounded-t-3xl relative md:h-[703px] w-full">
                     <div className='w-11/12 mx-auto hidden  md:flex justify-between absolute

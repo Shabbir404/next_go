@@ -24,8 +24,11 @@
     outline: 1px solid red;
 } */
 
-
 html {
     overflow-x: hidden;
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

@@ -11,33 +11,21 @@ const ForthLayer = () => {
     const newFacilities = [
         {
             "name": "Travel Alerts and Registration",
-            "category": "Travel Support",
-            "description": "Stay informed about travel alerts and register for important updates."
         },
         {
             "name": "Health and Medical Security",
-            "category": "Health Services",
-            "description": "Access to medical assistance and security services during travel."
         },
         {
             "name": "Travel Documentation",
-            "category": "Documentation",
-            "description": "Assistance with travel documents like passports, visas, and insurance."
         },
         {
             "name": "Money and Payment",
-            "category": "Financial Services",
-            "description": "Support with currency exchange, payments, and budgeting while traveling."
         },
         {
             "name": "Transportation Security",
-            "category": "Security",
-            "description": "Ensure your safety during transportation by providing up-to-date security information."
         },
         {
             "name": "Local Knowledge Guide",
-            "category": "Local Information",
-            "description": "Guide to local culture, attractions, restaurants, and emergency contacts."
         }
     ];
 
@@ -116,7 +104,7 @@ const ForthLayer = () => {
                     </button>
                 </div>
             </div>
-        
+
             <FifthLayer></FifthLayer>
         </div>
     );
