@@ -4,6 +4,7 @@ import '../style.css'
 import { IoIosTime } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
+import Blog from './Blog';
 
 const Regard = () => {
     const testimonials = [
@@ -139,8 +140,7 @@ const Regard = () => {
                 </div>
             </div>
 
-
-
+            <Blog></Blog>
         </div>
 
 
