@@ -2,6 +2,7 @@ import resultPng from '../src/assets/result.svg'
 import '../style.css'
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
+import VisaProssesing from './VisaProssesing';
 
 const Blog = () => {
 
@@ -74,6 +75,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+            <VisaProssesing></VisaProssesing>
         </div>
     );
 };
