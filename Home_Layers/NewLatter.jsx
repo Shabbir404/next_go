@@ -15,7 +15,8 @@ const NewLatter = () => {
                     </div>
                     <div className='text-center left-2/12 md:left-4/12  absolute top-2/6 md:top-1/5'>
                         <h1 className='text-3xl font-semibold ml-2 md:text-5xl'> Join The Newsletter</h1>
-                        <p className='tracking-wider mt-4'>To receive our best monthly deals</p>
+                        <p className='tracking-wider mt-4'>To receive our bes
+                            t monthly deals</p>
                         <div className=' flex absolute mt-4 left-1/12'>
                             <input type="text" placeholder="Enter your email address..."
                                 className="input input-neutral md:w-[400px] border-[#63AB45]" />
